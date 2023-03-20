@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopFiveCollectionViewCell" id="gTV-IL-0wX" customClass="TopFiveCollectionViewCell" customModule="Movies_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-rm-SBp">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcorn" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-92-fIr">
+                                <rect key="frame" x="20" y="0.0" width="200" height="280"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2D-8Z-HDR">
+                                <rect key="frame" x="0.0" y="161.33333333333337" width="49.666666666666664" height="158.66666666666663"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="130"/>
+                                <color key="textColor" name="nmbr"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cs2-92-fIr" firstAttribute="leading" secondItem="aeH-rm-SBp" secondAttribute="leading" constant="20" id="1I1-hj-iIC"/>
+                            <constraint firstAttribute="trailing" secondItem="cs2-92-fIr" secondAttribute="trailing" id="P6d-4k-iOz"/>
+                            <constraint firstItem="f2D-8Z-HDR" firstAttribute="leading" secondItem="aeH-rm-SBp" secondAttribute="leading" id="Rz6-qo-WlM"/>
+                            <constraint firstItem="cs2-92-fIr" firstAttribute="top" secondItem="aeH-rm-SBp" secondAttribute="top" id="n5L-Iz-u9f"/>
+                            <constraint firstAttribute="height" constant="300" id="onO-t5-Ely"/>
+                            <constraint firstAttribute="bottom" secondItem="cs2-92-fIr" secondAttribute="bottom" constant="20" id="riE-j6-hTQ"/>
+                            <constraint firstItem="f2D-8Z-HDR" firstAttribute="bottom" secondItem="cs2-92-fIr" secondAttribute="bottom" constant="40" id="ydg-ia-Sda"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aeH-rm-SBp" secondAttribute="trailing" id="Ll4-lm-uaV"/>
+                <constraint firstAttribute="bottom" secondItem="aeH-rm-SBp" secondAttribute="bottom" id="bFp-0n-azq"/>
+                <constraint firstItem="aeH-rm-SBp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oiB-08-tqY"/>
+                <constraint firstItem="aeH-rm-SBp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p7O-dZ-cBA"/>
+            </constraints>
+            <size key="customSize" width="220" height="300"/>
+            <connections>
+                <outlet property="topFiveImage" destination="cs2-92-fIr" id="oba-47-0l7"/>
+                <outlet property="topNumberLabel" destination="f2D-8Z-HDR" id="6Di-i2-Nbl"/>
+            </connections>
+            <point key="canvasLocation" x="222.90076335877862" y="76.760563380281695"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="popcorn" width="378" height="378"/>
+        <namedColor name="nmbr">
+            <color red="0.14117647058823529" green="0.16470588235294117" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
